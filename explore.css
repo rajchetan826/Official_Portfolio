@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    font-family: sans-serif;
+    
+
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar .logo{
+    width: 180px;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 0%;
+}
+
+ul{
+    margin-top: 1%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+    top: 10px;
+    
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: 3%;
+    transition: .4s ease;
+    
+}
+
+
+
+
+.border{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.border li {
+    position: relative;
+}
+
+.border li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    bottom: 0;
+    left: 0;
+    background: #0802A3; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.border li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info {
+    margin-left: 7%;
+    margin-top: 6%;
+    text-align: center; /* Center-align text within .info */
+}
+
+.info h2 {
+    font-size: 30px;
+    color: rgb(36, 32, 30);
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+
+.info h3{
+    font-size: 65px;
+    color: rgb(36,32,30);
+}
+
+.info h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+
+.info span{
+    color: #0802A3;
+}
+
+.info a{
+    text-decoration: none;
+    color: white;
+    background: #0802A3;
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .4s ease-in-out;
+}
+
+.info a:hover{
+    background:transparent;
+    color:#0802A3 ;
+    border-radius: 20px;
+}
+
+.image{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    right: 90px;
+    bottom: 0;
+}
+
+.image img{
+    position: relative;
+    height: 100%;
+    width: 50;
+    left: 40%;
+    right: 30%;
+    transform: translate(-55%);
+    top: 100;
+    transition: left 2s ease-out;
+
+
+}
+
+.image:hover .lap{
+    left: 80%;
+    
+}
+
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon{
+    margin-left: 7%;
+    color: blue;
+    margin-right: -60px;
+    font-size: 40px;
+    transition: .4s ease;
+    
+}
+
+.icons ion-icon:hover{
+    color: rgb(255, 0, 0);
+}
